@@ -39,9 +39,9 @@ access(all) struct FLOATMetadata {
     self.eventDescription = eventRef.description
     self.eventId = eventRef.eventId
     self.eventHost = eventRef.host
-    self.eventImage = "https://nftstorage.link/ipfs/".concat(eventRef.image)
+    self.eventImage = "https://ipfs.io/ipfs/".concat(eventRef.image)
     if let backImage = FLOAT.extraMetadataToStrOpt(eventRef.getExtraMetadata(), "backImage") {
-      self.backImage = "https://nftstorage.link/ipfs/".concat(backImage)
+      self.backImage = "https://ipfs.io/ipfs/".concat(backImage)
     } else {
       self.backImage = nil
     }

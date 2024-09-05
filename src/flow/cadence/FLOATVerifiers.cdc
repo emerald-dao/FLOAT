@@ -177,6 +177,12 @@ access(all) contract FLOATVerifiers {
         }
     }
 
+    access(all) struct ChallengeAchievementPoint: FLOAT.IVerifier {
+         access(account) fun verify(_ params: {String: AnyStruct}) {
+            panic("Deprecated")
+        }
+    }
+
     //
     // Email
     //
